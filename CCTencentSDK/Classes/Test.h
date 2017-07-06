@@ -6,7 +6,9 @@
 //  Copyright © 2017年 程策. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+
+#import <UIKit/UIKit.h>
+#import "WechatAuthSDK.h"
 
 @interface Test : NSObject
 
