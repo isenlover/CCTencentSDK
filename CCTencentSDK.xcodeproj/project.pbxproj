@@ -13,6 +13,7 @@
 		115D9BA21F0DE961006E6494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115D9BA01F0DE961006E6494 /* Main.storyboard */; };
 		115D9BA41F0DE961006E6494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115D9BA31F0DE961006E6494 /* Assets.xcassets */; };
 		115D9BA71F0DE961006E6494 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115D9BA51F0DE961006E6494 /* LaunchScreen.storyboard */; };
+		11BA85371F0E158300F8A347 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BA85361F0E158300F8A347 /* Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		115D9BA31F0DE961006E6494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		115D9BA61F0DE961006E6494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		115D9BA81F0DE961006E6494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11BA85351F0E158300F8A347 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		11BA85361F0E158300F8A347 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		115D9B961F0DE961006E6494 /* CCTencentSDK */ = {
 			isa = PBXGroup;
 			children = (
+				11BA85341F0E157900F8A347 /* Classes */,
 				115D9B9A1F0DE961006E6494 /* AppDelegate.h */,
 				115D9B9B1F0DE961006E6494 /* AppDelegate.m */,
 				115D9B9D1F0DE961006E6494 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				115D9B981F0DE961006E6494 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11BA85341F0E157900F8A347 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				11BA85351F0E158300F8A347 /* Test.h */,
+				11BA85361F0E158300F8A347 /* Test.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				115D9B9F1F0DE961006E6494 /* ViewController.m in Sources */,
+				11BA85371F0E158300F8A347 /* Test.m in Sources */,
 				115D9B9C1F0DE961006E6494 /* AppDelegate.m in Sources */,
 				115D9B991F0DE961006E6494 /* main.m in Sources */,
 			);
@@ -277,6 +291,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K27626WT8U;
 				INFOPLIST_FILE = CCTencentSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.CCTencentSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,6 +304,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K27626WT8U;
 				INFOPLIST_FILE = CCTencentSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.CCTencentSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -314,6 +330,7 @@
 				115D9BAD1F0DE961006E6494 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
