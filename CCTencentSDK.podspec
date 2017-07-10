@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CCTencentSDK"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "QQ和微信SDK"
 
   s.description  = <<-DESC
@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
   #s.vendored_framework = 'CCTencentSDK/Classes/QQSDK/CCTencentSDK.framework'
   #s.resource_bundles = {'Resources' => 'CCTencentSDK/Classes/QQSDK/TencentOpenApi_IOS_Bundle.bundle'}
   #s.libraries	 = "stdc++", "sqlite3", "iconv"
-  #s.ios.vendored_libraries = 'CCTencentSDK/Classes/WechatSDK/libWeChatSDK.a'
+  s.ios.vendored_libraries = 'CCTencentSDK/Classes/WechatSDK/libWeChatSDK.a'
   s.requires_arc = true
 end

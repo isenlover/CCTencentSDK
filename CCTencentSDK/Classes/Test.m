@@ -11,7 +11,7 @@
 @implementation Test
 
 - (void)show {
-    NSLog(@"fwef2");
+    NSLog(@"fwef2ss");
 }
 
 @end
