@@ -11,7 +11,7 @@
 @implementation Test
 
 - (void)show {
-    NSLog(@"fwef2ss");
+    NSLog(@"没VPN传个代码贼慢。。。");
 }
 
 @end

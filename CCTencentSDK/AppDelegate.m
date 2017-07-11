@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <TencentOpenAPI/TencentOAuth.h>
 
+
 @interface AppDelegate ()
 
 @end
@@ -16,15 +17,16 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    return [TencentOAuth HandleOpenURL:url];
+    return [TencentOAuth HandleOpenURL:url] && [WXApi handleOpenURL:url delegate:self];
 }
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
-    return [TencentOAuth HandleOpenURL:url];
+    return [TencentOAuth HandleOpenURL:url] && [WXApi handleOpenURL:url delegate:self];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [WXApi registerApp:@"wx2b2020463846d5b4"];
     return YES;
 }
 

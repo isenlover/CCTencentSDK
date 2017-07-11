@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1143D2941F13974F00E8254D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1143D2931F13974F00E8254D /* libz.tbd */; };
+		1143D2961F13976400E8254D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1143D2951F13976400E8254D /* libc++.tbd */; };
+		1143D2981F13977000E8254D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1143D2971F13977000E8254D /* CFNetwork.framework */; };
 		115D9B991F0DE961006E6494 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 115D9B981F0DE961006E6494 /* main.m */; };
 		115D9B9C1F0DE961006E6494 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 115D9B9B1F0DE961006E6494 /* AppDelegate.m */; };
 		115D9B9F1F0DE961006E6494 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115D9B9E1F0DE961006E6494 /* ViewController.m */; };
@@ -28,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1143D2931F13974F00E8254D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		1143D2951F13976400E8254D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		1143D2971F13977000E8254D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		115D9B941F0DE961006E6494 /* CCTencentSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCTencentSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		115D9B981F0DE961006E6494 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		115D9B9A1F0DE961006E6494 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1143D2981F13977000E8254D /* CFNetwork.framework in Frameworks */,
+				1143D2961F13976400E8254D /* libc++.tbd in Frameworks */,
+				1143D2941F13974F00E8254D /* libz.tbd in Frameworks */,
 				11BA85561F0E300100F8A347 /* libstdc++.tbd in Frameworks */,
 				11BA85531F0E27CB00F8A347 /* libsqlite3.tbd in Frameworks */,
 				11BA85511F0E27B700F8A347 /* libiconv.tbd in Frameworks */,
@@ -143,6 +152,9 @@
 		11BA85451F0E26A200F8A347 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1143D2971F13977000E8254D /* CFNetwork.framework */,
+				1143D2951F13976400E8254D /* libc++.tbd */,
+				1143D2931F13974F00E8254D /* libz.tbd */,
 				11BA85551F0E300000F8A347 /* libstdc++.tbd */,
 				11BA85521F0E27CB00F8A347 /* libsqlite3.tbd */,
 				11BA85501F0E27B600F8A347 /* libiconv.tbd */,
@@ -378,7 +390,11 @@
 					"$(PROJECT_DIR)/CCTencentSDK/Classes/WechatSDK",
 					"$(PROJECT_DIR)/CCTencentSDK/Classes/SDK",
 				);
-				OTHER_LDFLAGS = "-fobjc-arc";
+				OTHER_LDFLAGS = (
+					"-fobjc-arc",
+					"-Objc",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cc.CCTencentSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -401,7 +417,11 @@
 					"$(PROJECT_DIR)/CCTencentSDK/Classes/WechatSDK",
 					"$(PROJECT_DIR)/CCTencentSDK/Classes/SDK",
 				);
-				OTHER_LDFLAGS = "-fobjc-arc";
+				OTHER_LDFLAGS = (
+					"-fobjc-arc",
+					"-Objc",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cc.CCTencentSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

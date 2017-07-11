@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CCTencentSDK/ViewController.m"
-            timestampString = "521024317.163559"
+            timestampString = "521379669.367784"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "-getUserInfoResponse:"
             landmarkType = "7">
          </BreakpointContent>
